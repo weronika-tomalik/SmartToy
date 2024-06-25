@@ -1,0 +1,5 @@
+# Pliki konfiguracyjne IDE
+.idea/
+
+# Zależności Node.js
+node_modules/

@@ -1,0 +1,16 @@
+{
+  "toys": [
+    {
+      "id": "7b99",
+      "name": "duplo",
+      "description": "duże klocki, brak 3",
+      "category": "structural"
+    },
+    {
+      "id": "5a10",
+      "name": "drewniane",
+      "description": "due",
+      "category": "structural"
+    }
+  ]
+}
