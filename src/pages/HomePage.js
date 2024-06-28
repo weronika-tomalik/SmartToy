@@ -1,45 +1,45 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import {Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import "./homePage.scss"
 
-const HomePage = () => {
+
+
+
+const HomePage = ({setResult}) => {
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate('/toylist');
+    }
+
     return (
-        <Container>
-            <Row>
-                <Col>Smart Toys</Col>
+        <Container >
+            <Row className='test'>
+                <Col className='col-test' >Smart Toys</Col>
             </Row>
-            <Row>
-                <Col sm={4}>
-                    <Row>
-                        <Col><Button variant="outline-info">Wyszukaj</Button>{' '}</Col>
-                    </Row>
-                    <Row>
-                        <Col><Button variant="outline-info">Dodaj zabawkę</Button>{' '}</Col>
-                    </Row>
-                    <Row>
-                        <Col><Button variant="outline-info">Losuj</Button>{' '}</Col>
-                    </Row>
-                </Col>
-                <Col sm={8}>
-                    <Row>
-                        <Col>Twoje zabawki</Col>
-                    </Row>
-                    <Row>
-                        <Col>Kat. 1</Col>
-                        <Col>Kat. 2</Col>
-                        <Col>Kat. 3</Col>
-                    </Row>
-                    <Row>
-                        <Col>Kat. 4</Col>
-                        <Col>Kat. 5</Col>
-                        <Col>Kat. 6</Col>
-                    </Row>
+            <Row className="test">
+                <Col className='col-test'>
+                    <Button as={Link} to="/newtoy" variant="secondary" className='btn-test'>Dodaj zabawkę</Button>
+                    <Button onClick={handleNavigate} variant="secondary" className='btn-test'>Nowy zestaw</Button>
                 </Col>
             </Row>
-            <Row>
-                <Col>Footer info</Col>
+            <Row className="test ">
+                <Col className='col-test'>Your toys</Col>
             </Row>
-
+            <Row className="test " >
+                <Col as={Link} to="/toymovement" className='col-test' sx={12}  md={4}><Button variant="outline-light" className='btn-test'>Movement Toys</Button></Col>
+                <Col as={Link} to="/toyinteractive" className='col-test' sx={12}  md={4}><Button variant="outline-light" className='btn-test'>Interactive Toys</Button></Col>
+                <Col as={Link} to="/toystructural" className='col-test' sx={12}  md={4}><Button variant="outline-light" className='btn-test'>Structural Toys</Button></Col>
+                {/*<Col className='header-test' sx={12} sm={6} md={4}><Button variant="outline-light" className='btn-test'>Kat. 4</Button></Col>*/}
+                {/*<Col className='header-test' sx={12} sm={6} md={4}><Button variant="outline-light" className='btn-test'>Kat. 5</Button></Col>*/}
+                {/*<Col className='header-test' sx={12} sm={6} md={4}><Button variant="outline-light" className='btn-test'>Kat. 6</Button></Col>*/}
+            </Row>
+            <Row className="test">
+                <Col className='footer-test'>Footer info</Col>
+            </Row>
         </Container>
     );
 };

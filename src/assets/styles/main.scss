@@ -1,10 +1,13 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
+
 body {
-  background-color: seagreen;
-  font-size: 30px;
-  color: deeppink;
+  background-repeat: no-repeat;
+  background-image: url("../images/background-2819026_1920.jpg");
+  background-position: center;
+  background-size: cover;
 }
+

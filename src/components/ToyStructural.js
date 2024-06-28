@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import RandomToyPicker from "./RandomToyPicker";
 
-
-const ToysList = () => {
+const ToysStructural = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
@@ -17,21 +15,19 @@ const ToysList = () => {
             return toy
     });
 
-    const movement = toys.filter(function (toy) {
-        if (toy.category === 'movement')
-            return toy
-    });
-
-    const interactive = toys.filter(function (toy) {
-        if (toy.category === 'interactive')
-            return toy
-    });
-
     return (
         <div>
-            <RandomToyPicker array1={interactive} array2={movement} array3={structural}/>
+            <h2>Zabawki konstrukcyjne</h2>
+            <ul>
+                {structural.map(structuralToy => (
+                    <li key={structuralToy.id}>
+                        <h3>{structuralToy.name}</h3>
+                        <p>{structuralToy.description}</p>
+                    </li>
+                ))}
+            </ul>
         </div>
-    )
+    );
 };
 
-export default ToysList
+export default ToysStructural

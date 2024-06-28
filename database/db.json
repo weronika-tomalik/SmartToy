@@ -1,16 +1,64 @@
 {
   "toys": [
     {
-      "id": "7b99",
+      "id": "e2d8",
+      "name": "pchacz",
+      "description": "drewniane klocki w zestawie",
+      "category": "movement"
+    },
+    {
+      "id": "8a37",
+      "name": "samochodzik z IKEA",
+      "description": "do ciągnięcia, w zestawie 6 magnetycznych klocków",
+      "category": "movement"
+    },
+    {
+      "id": "2f95",
+      "name": "jamnik",
+      "description": "głośny",
+      "category": "interactive"
+    },
+    {
+      "id": "45ae",
+      "name": "domek",
+      "description": "ddd",
+      "category": "interactive"
+    },
+    {
+      "id": "e0f2",
+      "name": "kociołek",
+      "description": "po angielsku",
+      "category": "interactive"
+    },
+    {
+      "id": "330b",
+      "name": "rowerek biegowy",
+      "description": "brak dzwonka",
+      "category": "movement"
+    },
+    {
+      "id": "1",
       "name": "duplo",
-      "description": "duże klocki, brak 3",
+      "description": "ddd",
       "category": "structural"
     },
     {
-      "id": "5a10",
-      "name": "drewniane",
-      "description": "due",
+      "id": "2",
+      "name": "klocki drewniane",
+      "description": "po angielsku",
       "category": "structural"
+    },
+    {
+      "id": "3",
+      "name": "przyssawki",
+      "description": "brak dzwonka",
+      "category": "structural"
+    },
+    {
+      "id": "06a5",
+      "name": "pchacz 2",
+      "description": "do dziadka",
+      "category": "movement"
     }
   ]
 }

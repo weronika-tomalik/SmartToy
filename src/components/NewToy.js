@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
-const NewToy = ({ onAddToy }) => {
+const NewToy = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
@@ -23,13 +23,13 @@ const NewToy = ({ onAddToy }) => {
             })
                 .then(response => response.json())
                 .then(data => {
-                    onAddToy(data);
                     setName('');
                     setDescription('');
                     setCategory('');
                 })
                 .catch(error => console.error('Error adding task:', error));
     };
+
     return (
         <form onSubmit={handleSubmit}>
             <div>
