@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import RandomToyPicker from "../components/RandomToyPicker";
 
-const ToyInteractive = () => {
+
+
+const ToysList = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
@@ -10,6 +13,16 @@ const ToyInteractive = () => {
             .catch(error => console.error('Error fetching data:', error));
     }, []);
 
+    const structural = toys.filter(function (toy) {
+        if (toy.category === 'structural')
+            return toy
+    });
+
+    const movement = toys.filter(function (toy) {
+        if (toy.category === 'movement')
+            return toy
+    });
+
     const interactive = toys.filter(function (toy) {
         if (toy.category === 'interactive')
             return toy
@@ -17,16 +30,9 @@ const ToyInteractive = () => {
 
     return (
         <div>
-            <h2>Zabawki interaktywne</h2>
-            <ul>
-                {interactive.map(interactiveToy => (
-                    <li key={interactiveToy.id}>
-                        <h3>{interactiveToy.name}</h3>
-                        <p>{interactiveToy.description}</p>
-                    </li>
-                ))}
-            </ul>
+            <RandomToyPicker interactive={interactive} movement={movement} structural={structural}/>
         </div>
-    );
+    )
 };
-export default ToyInteractive
+
+export default ToysList

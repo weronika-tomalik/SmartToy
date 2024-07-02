@@ -59,6 +59,24 @@
       "name": "pchacz 2",
       "description": "do dziadka",
       "category": "movement"
+    },
+    {
+      "id": "1625",
+      "name": "pcha",
+      "description": "sdvadr",
+      "category": "structural"
+    },
+    {
+      "id": "7fac",
+      "name": "zielone drzewo",
+      "description": "baterie AAA",
+      "category": "interactive"
+    },
+    {
+      "id": "9ce7",
+      "name": "niebieski domek",
+      "description": "bbb",
+      "category": "interactive"
     }
   ]
 }

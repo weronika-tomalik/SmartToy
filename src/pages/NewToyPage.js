@@ -1,9 +1,15 @@
 import React, {useEffect, useState} from 'react';
+import {useNavigate} from "react-router-dom";
 
-const NewToy = () => {
+
+const NewToyPage = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
+    const navigate = useNavigate();
+    const handleNavigate = (path) => {
+        navigate(path);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,7 +37,7 @@ const NewToy = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
             <div>
                 <label>Name:</label>
                 <input
@@ -59,9 +65,9 @@ const NewToy = () => {
                     <option value="interactive">interactive</option>
                 </select>
             </div>
-            <button type="submit">Add Toy</button>
+            <button type="submit" >Add Toy</button>
         </form>
     );
 };
 
-export default NewToy
+export default NewToyPage
