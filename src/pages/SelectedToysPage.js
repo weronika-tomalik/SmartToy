@@ -28,13 +28,15 @@ const SelectedToysPage = ({typeOfToy}) => {
                 <Col className='toy__header'>Your {typeOfToy} toys</Col>
             </Row>
             {selectedToys.map(toy => (
-                        <Row key={toy.id} className='toy__item' md={12}>
-                            <Col className='toy__item-header'  >{toy.name}</Col>
-                            <Col className='toy__item-info' md={12} >{toy.description}</Col>
+                        <Row  key={toy.id} className='toy__item'>
+                            <Col className='toy__item-header' sm={10} lg={8}>{toy.name} </Col>
+                            <Col className='toy__item-info' sm={10} lg={8}>{toy.description}</Col>
                         </Row>
                 ))}
             <Row className='toy__row-button'>
-                <Col><button className='toy__button' onClick={handleNavigate}>Dodaj nową zabawkę</button></Col>
+                <Col className='text-center'>
+                    <Button onClick={handleNavigate} variant="outline-light" className='toy__button'>Dodaj nową zabawkę</Button>
+                </Col>
             </Row>
         </Container>
     );

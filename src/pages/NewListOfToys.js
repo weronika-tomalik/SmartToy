@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RandomToyPicker from "../components/RandomToyPicker";
 
-
-
-const ToysList = () => {
+const NewListOfToys = () => {
     const [toys, setToys] = useState([]);
 
     useEffect(() => {
@@ -35,4 +33,4 @@ const ToysList = () => {
     )
 };
 
-export default ToysList
+export default NewListOfToys

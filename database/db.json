@@ -77,6 +77,18 @@
       "name": "niebieski domek",
       "description": "bbb",
       "category": "interactive"
+    },
+    {
+      "id": "d3ec",
+      "name": "duplo safari",
+      "description": "ze słoniem i żyrafą, 15 elementów",
+      "category": "structural"
+    },
+    {
+      "id": "37ef",
+      "name": "duplo 3",
+      "description": "duzy zestaw",
+      "category": "structural"
     }
   ]
 }

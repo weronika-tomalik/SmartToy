@@ -26,7 +26,7 @@ const RandomToyPicker = ({interactive, movement, structural}) => {
 
     return (
         <div>
-            <Button onClick={handleRandomSelection} variant="secondary" className='btn-test'>Nowy zestaw</Button>
+            <Button onClick={handleRandomSelection} variant="outline-light" className='btn-test'>Nowy zestaw</Button>
             <ul>
                 {randomElements.map((element, index) => (
                     <li key={index}>{element.name}</li>

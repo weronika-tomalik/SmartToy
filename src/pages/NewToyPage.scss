@@ -1,0 +1,27 @@
+.form__container {
+  margin-top: 150px;
+  background-color: rgba(215,163,208,0.2);
+  padding: 30px;
+  border-radius: 30px;
+}
+.form__label {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form__control {
+  margin-top: 10px;
+}
+
+.form__button {
+  margin-top: 50px;
+  color: black;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+}
