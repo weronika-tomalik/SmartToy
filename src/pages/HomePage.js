@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Col, Container, Row} from "react-bootstrap";
+import {Col, Container, Row, Nav, Navbar, NavLink} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import "./homePage.scss";
@@ -13,7 +13,19 @@ const HomePage = () => {
 
     return (
 
-        <Container >
+        <Container className='container-test'>
+            {/*<Row>*/}
+            {/*    <Navbar bg="light" data-bs-theme="light">*/}
+            {/*        <Container>*/}
+            {/*            <Navbar.Brand href="#home">Smart Toys</Navbar.Brand>*/}
+            {/*            <Nav className="me-auto">*/}
+            {/*                <NavLink href="#home">Home</NavLink>*/}
+            {/*                <NavLink href="#features">Add Toy</NavLink>*/}
+            {/*                <NavLink href="#pricing">New toy set</NavLink>*/}
+            {/*            </Nav>*/}
+            {/*        </Container>*/}
+            {/*    </Navbar>*/}
+            {/*</Row>*/}
             <Row className='test'>
                 <Col className='col-test' >Smart Toys</Col>
             </Row>

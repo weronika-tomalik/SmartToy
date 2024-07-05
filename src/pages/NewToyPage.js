@@ -1,13 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import {FormGroup, FormLabel, FormControl, Form, FormSelect, Container} from "react-bootstrap";
+import React, {useState} from 'react';
+import {FormGroup, FormLabel, FormControl, Form, FormSelect, Container, ToastContainer, Toast, ToastBody,CloseButton} from "react-bootstrap";
 import {Button, Row, Col} from "react-bootstrap";
-import "./NewToyPage.scss"
+import "./NewToyPage.scss";
+
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const NewToyPage = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
     const [errors, setErrors] = useState([]);
+    const [showToast, setShowToast] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -39,18 +43,19 @@ const NewToyPage = () => {
             category
         };
 
-            fetch('http://localhost:5000/toys', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(newToy)
+        fetch('http://localhost:5000/toys', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newToy)
             })
                 .then(response => response.json())
                 .then(data => {
                     setName('');
                     setDescription('');
                     setCategory('');
+                    setShowToast(true)
                 })
                 .catch(error => console.error('Error adding task:', error));
     };
@@ -65,7 +70,6 @@ const NewToyPage = () => {
                         <FormControl type="text"
                                      value={name}
                                      onChange={(e) => setName(e.target.value)}
-
                                      placeholder="Name of toy"
                                      className={`form__control ${errors.name ? 'is-invalid' : ''}`}
                         />
@@ -82,7 +86,6 @@ const NewToyPage = () => {
                                       type="text"
                                       value={description}
                                       onChange={(e) => setDescription(e.target.value)}
-
                                       placeholder="About toy"
                                      className={`form__control ${errors.description ? 'is-invalid' : ''}`}
                         />
@@ -104,12 +107,21 @@ const NewToyPage = () => {
                     </FormGroup>
                 </Col>
             </Row>
-            <Row  >
+            <Row>
                 <Col className='text-center' >
                     <Button type="submit" variant="outline-light" className='form__button justify-content-center'>Add Toy</Button>
                 </Col>
             </Row>
         </Form>
+            <Row>
+                <Col>
+                    <ToastContainer position="top-end" className="p-3">
+                        <Toast onClose={() => setShowToast(false)} show={showToast} delay={2000} autohide >
+                            <ToastBody> Well done!</ToastBody>
+                        </Toast>
+                    </ToastContainer>
+                </Col>
+            </Row>
         </Container>
     );
 };

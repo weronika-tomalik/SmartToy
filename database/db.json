@@ -2,15 +2,10 @@
   "toys": [
     {
       "id": "e2d8",
-      "name": "pchacz",
-      "description": "drewniane klocki w zestawie",
-      "category": "movement"
-    },
-    {
-      "id": "8a37",
-      "name": "samochodzik z IKEA",
-      "description": "do ciągnięcia, w zestawie 6 magnetycznych klocków",
-      "category": "movement"
+      "name": "pchacze",
+      "description": "sfdbsfbgwr",
+      "category": "structural",
+      "": "pchac"
     },
     {
       "id": "2f95",
@@ -31,12 +26,6 @@
       "category": "interactive"
     },
     {
-      "id": "330b",
-      "name": "rowerek biegowy",
-      "description": "brak dzwonka",
-      "category": "movement"
-    },
-    {
       "id": "1",
       "name": "duplo",
       "description": "ddd",
@@ -53,12 +42,6 @@
       "name": "przyssawki",
       "description": "brak dzwonka",
       "category": "structural"
-    },
-    {
-      "id": "06a5",
-      "name": "pchacz 2",
-      "description": "do dziadka",
-      "category": "movement"
     },
     {
       "id": "1625",
@@ -88,6 +71,192 @@
       "id": "37ef",
       "name": "duplo 3",
       "description": "duzy zestaw",
+      "category": "structural"
+    },
+    {
+      "id": "eb6a",
+      "name": "",
+      "description": "b lbih",
+      "category": ""
+    },
+    {
+      "id": "723f",
+      "name": "duplo",
+      "description": "avn oqeinrqg",
+      "category": "movement"
+    },
+    {
+      "id": "13e8",
+      "name": "duplo",
+      "description": "sqiwfenqogn",
+      "category": "movement"
+    },
+    {
+      "id": "f5dc",
+      "name": "duplo",
+      "description": "erg24h24",
+      "category": "interactive"
+    },
+    {
+      "id": "f710",
+      "name": "duplo",
+      "description": "ewrgvqweh2",
+      "category": "movement"
+    },
+    {
+      "id": "2dda",
+      "name": "duplo",
+      "description": "asdgrqeg",
+      "category": "structural"
+    },
+    {
+      "id": "1f43",
+      "name": "duplo",
+      "description": "eargqeh",
+      "category": "movement"
+    },
+    {
+      "id": "8316",
+      "name": "duplo",
+      "description": "wqg3g",
+      "category": "structural"
+    },
+    {
+      "id": "4cc0",
+      "name": "aefgweqgeqg",
+      "description": "ergeqg",
+      "category": "structural"
+    },
+    {
+      "id": "1ebc",
+      "name": "sdgewghwe",
+      "description": "wrhtwrthwrt",
+      "category": "movement"
+    },
+    {
+      "id": "cc21",
+      "name": "gqegq3g",
+      "description": "ergqegg",
+      "category": "movement"
+    },
+    {
+      "id": "ae97",
+      "name": "duplo",
+      "description": "siodrghoieqrh",
+      "category": "movement"
+    },
+    {
+      "id": "e6ea",
+      "name": "wegeg",
+      "description": "ferqgqerg",
+      "category": "structural"
+    },
+    {
+      "id": "01d4",
+      "name": "wrgwrhwg",
+      "description": "wgwerheh",
+      "category": "structural"
+    },
+    {
+      "id": "da6a",
+      "name": "qgqegq",
+      "description": "regeh",
+      "category": "movement"
+    },
+    {
+      "id": "53eb",
+      "name": "regqegqg",
+      "description": "wergehg",
+      "category": "interactive"
+    },
+    {
+      "id": "4e36",
+      "name": "duplo duplo",
+      "description": "baaaardzo duże ",
+      "category": "movement"
+    },
+    {
+      "id": "3de2",
+      "name": "pchacza pchacza",
+      "description": "wrthrth",
+      "category": "structural"
+    },
+    {
+      "id": "39f5",
+      "name": "duplo pllll",
+      "description": "sadgerg",
+      "category": "movement"
+    },
+    {
+      "id": "9b1a",
+      "name": "jsrapgjpOW",
+      "description": "gnpWEP",
+      "category": "structural"
+    },
+    {
+      "id": "0a0e",
+      "name": "DUPLO",
+      "description": "duże klocki, świetne",
+      "category": "structural"
+    },
+    {
+      "id": "61f5",
+      "name": "ehrqerhqwrhtwrth",
+      "description": "qey45y",
+      "category": "movement"
+    },
+    {
+      "id": "fe5b",
+      "name": "agerg",
+      "description": "ergqerh",
+      "category": "movement"
+    },
+    {
+      "id": "b8ac",
+      "name": "sthrwthqrth",
+      "description": "stwhnwtrh",
+      "category": "interactive"
+    },
+    {
+      "id": "c0d3",
+      "name": "srhtwrwrthrt",
+      "description": "wrhqr",
+      "category": "movement"
+    },
+    {
+      "id": "24de",
+      "name": "rwthh",
+      "description": "wrtwrh",
+      "category": "movement"
+    },
+    {
+      "id": "ab53",
+      "name": "aergerqg",
+      "description": "arge",
+      "category": "movement"
+    },
+    {
+      "id": "2609",
+      "name": "rger",
+      "description": "eryqe5",
+      "category": "movement"
+    },
+    {
+      "id": "b39d",
+      "name": "egega",
+      "description": "aerhaeh",
+      "category": "interactive"
+    },
+    {
+      "id": "995f",
+      "name": "eargqeg",
+      "description": "ehrwh",
+      "category": "movement"
+    },
+    {
+      "id": "3de8",
+      "name": "duplo, duplo, duplo",
+      "description": "sjvnWEGVNIF",
       "category": "structural"
     }
   ]
