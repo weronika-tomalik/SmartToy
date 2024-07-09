@@ -23,7 +23,7 @@ const RemoveButton = ({ id, onToyRemoved }) => {
             }
         }
 
-    return <Button lg={2} onClick={handleDelete} variant="outline-light" className='m-2'>Remove toy</Button>
+    return <Button lg={2} onClick={handleDelete} variant="outline-dark">Remove toy</Button>
     };
 
 

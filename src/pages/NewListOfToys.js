@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import RandomToyPicker from "../components/RandomToyPicker";
 
 const NewListOfToys = () => {
     const [toys, setToys] = useState([]);
+
 
     useEffect(() => {
         fetch('http://localhost:5000/toys')
@@ -27,9 +28,10 @@ const NewListOfToys = () => {
     });
 
     return (
-        <div>
+        <>
             <RandomToyPicker interactive={interactive} movement={movement} structural={structural}/>
-        </div>
+
+        </>
     )
 };
 

@@ -1,263 +1,112 @@
 {
   "toys": [
     {
-      "id": "e2d8",
-      "name": "pchacze",
-      "description": "sfdbsfbgwr",
-      "category": "structural",
-      "": "pchac"
+      "id": "d7d4",
+      "name": "duplo",
+      "description": "kolorowe klocki, w zestawie żyrafa oraz słoń, wartość: 40 zł",
+      "category": "structural"
     },
     {
-      "id": "2f95",
+      "id": "bd05",
+      "name": "śpiewający kociołek ",
+      "description": "dodatkowo 5 elementów do sortowania, po angielsku, FisherPrice, 130 zł",
+      "category": "interactive"
+    },
+    {
+      "id": "08f0",
       "name": "jamnik",
       "description": "głośny",
       "category": "interactive"
     },
     {
-      "id": "45ae",
-      "name": "domek",
-      "description": "ddd",
+      "id": "b88a",
+      "name": "drewniane klocki",
+      "description": "literki i cyferki",
+      "category": "structural"
+    },
+    {
+      "id": "e6a3",
+      "name": "puzzle 3d",
+      "description": "dość trudne, raczej dla trzylatka",
+      "category": "structural"
+    },
+    {
+      "id": "2032",
+      "name": "koparka do ciągnięcia",
+      "description": "idealna do piasku",
+      "category": "movement"
+    },
+    {
+      "id": "e8ab",
+      "name": "pchacz",
+      "description": "dodatkowy sorter",
+      "category": "movement"
+    },
+    {
+      "id": "41e2",
+      "name": "bujak",
+      "description": "świetny do balasowania",
+      "category": "movement"
+    },
+    {
+      "id": "197c",
+      "name": "tablet z alfabetem",
+      "description": "wierszyki po polsku",
       "category": "interactive"
     },
     {
-      "id": "e0f2",
-      "name": "kociołek",
-      "description": "po angielsku",
+      "id": "72c6",
+      "name": "przyssawki ",
+      "description": "kolorowe, świetnie nadają się do budowania konstrukcji, np. na szybie",
+      "category": "structural"
+    },
+    {
+      "id": "1be0",
+      "name": "ścianka wspinaczkowa",
+      "description": "łatwa do zamontowania wraz z bujakiem",
+      "category": "movement"
+    },
+    {
+      "id": "8d18",
+      "name": "wywrotka",
+      "description": "świetnie sprawdza się na spacerach, lekka, dziecko może w niej trnasportować swoje skarby",
+      "category": "movement"
+    },
+    {
+      "id": "d74a",
+      "name": "książeczka z dodatkowymi przyciskami na boku",
+      "description": "przyciski zachęcają do naśladowania dźwięków",
       "category": "interactive"
     },
     {
-      "id": "1",
-      "name": "duplo",
-      "description": "ddd",
+      "id": "131e",
+      "name": "lego creator - królik",
+      "description": "świetny zestaw dla starszaka",
       "category": "structural"
     },
     {
-      "id": "2",
-      "name": "klocki drewniane",
-      "description": "po angielsku",
+      "id": "2720",
+      "name": "piramida z 6 trójkątów",
+      "description": "z Pepco, tania i dobrze wykonana, nadaje się do kąpieli",
       "category": "structural"
     },
     {
-      "id": "3",
-      "name": "przyssawki",
-      "description": "brak dzwonka",
+      "id": "d339",
+      "name": "deska do balansowani",
+      "description": "i dla dzieci, i dla dorosłych",
+      "category": "movement"
+    },
+    {
+      "id": "2a54",
+      "name": "lego - creator - samochód",
+      "description": "wymagający zestaw, na dobry dzień",
       "category": "structural"
     },
     {
-      "id": "1625",
-      "name": "pcha",
-      "description": "sdvadr",
-      "category": "structural"
-    },
-    {
-      "id": "7fac",
-      "name": "zielone drzewo",
-      "description": "baterie AAA",
+      "id": "6bc7",
+      "name": "domek grający",
+      "description": "dodatkowy sorter",
       "category": "interactive"
-    },
-    {
-      "id": "9ce7",
-      "name": "niebieski domek",
-      "description": "bbb",
-      "category": "interactive"
-    },
-    {
-      "id": "d3ec",
-      "name": "duplo safari",
-      "description": "ze słoniem i żyrafą, 15 elementów",
-      "category": "structural"
-    },
-    {
-      "id": "37ef",
-      "name": "duplo 3",
-      "description": "duzy zestaw",
-      "category": "structural"
-    },
-    {
-      "id": "eb6a",
-      "name": "",
-      "description": "b lbih",
-      "category": ""
-    },
-    {
-      "id": "723f",
-      "name": "duplo",
-      "description": "avn oqeinrqg",
-      "category": "movement"
-    },
-    {
-      "id": "13e8",
-      "name": "duplo",
-      "description": "sqiwfenqogn",
-      "category": "movement"
-    },
-    {
-      "id": "f5dc",
-      "name": "duplo",
-      "description": "erg24h24",
-      "category": "interactive"
-    },
-    {
-      "id": "f710",
-      "name": "duplo",
-      "description": "ewrgvqweh2",
-      "category": "movement"
-    },
-    {
-      "id": "2dda",
-      "name": "duplo",
-      "description": "asdgrqeg",
-      "category": "structural"
-    },
-    {
-      "id": "1f43",
-      "name": "duplo",
-      "description": "eargqeh",
-      "category": "movement"
-    },
-    {
-      "id": "8316",
-      "name": "duplo",
-      "description": "wqg3g",
-      "category": "structural"
-    },
-    {
-      "id": "4cc0",
-      "name": "aefgweqgeqg",
-      "description": "ergeqg",
-      "category": "structural"
-    },
-    {
-      "id": "1ebc",
-      "name": "sdgewghwe",
-      "description": "wrhtwrthwrt",
-      "category": "movement"
-    },
-    {
-      "id": "cc21",
-      "name": "gqegq3g",
-      "description": "ergqegg",
-      "category": "movement"
-    },
-    {
-      "id": "ae97",
-      "name": "duplo",
-      "description": "siodrghoieqrh",
-      "category": "movement"
-    },
-    {
-      "id": "e6ea",
-      "name": "wegeg",
-      "description": "ferqgqerg",
-      "category": "structural"
-    },
-    {
-      "id": "01d4",
-      "name": "wrgwrhwg",
-      "description": "wgwerheh",
-      "category": "structural"
-    },
-    {
-      "id": "da6a",
-      "name": "qgqegq",
-      "description": "regeh",
-      "category": "movement"
-    },
-    {
-      "id": "53eb",
-      "name": "regqegqg",
-      "description": "wergehg",
-      "category": "interactive"
-    },
-    {
-      "id": "4e36",
-      "name": "duplo duplo",
-      "description": "baaaardzo duże ",
-      "category": "movement"
-    },
-    {
-      "id": "3de2",
-      "name": "pchacza pchacza",
-      "description": "wrthrth",
-      "category": "structural"
-    },
-    {
-      "id": "39f5",
-      "name": "duplo pllll",
-      "description": "sadgerg",
-      "category": "movement"
-    },
-    {
-      "id": "9b1a",
-      "name": "jsrapgjpOW",
-      "description": "gnpWEP",
-      "category": "structural"
-    },
-    {
-      "id": "0a0e",
-      "name": "DUPLO",
-      "description": "duże klocki, świetne",
-      "category": "structural"
-    },
-    {
-      "id": "61f5",
-      "name": "ehrqerhqwrhtwrth",
-      "description": "qey45y",
-      "category": "movement"
-    },
-    {
-      "id": "fe5b",
-      "name": "agerg",
-      "description": "ergqerh",
-      "category": "movement"
-    },
-    {
-      "id": "b8ac",
-      "name": "sthrwthqrth",
-      "description": "stwhnwtrh",
-      "category": "interactive"
-    },
-    {
-      "id": "c0d3",
-      "name": "srhtwrwrthrt",
-      "description": "wrhqr",
-      "category": "movement"
-    },
-    {
-      "id": "24de",
-      "name": "rwthh",
-      "description": "wrtwrh",
-      "category": "movement"
-    },
-    {
-      "id": "ab53",
-      "name": "aergerqg",
-      "description": "arge",
-      "category": "movement"
-    },
-    {
-      "id": "2609",
-      "name": "rger",
-      "description": "eryqe5",
-      "category": "movement"
-    },
-    {
-      "id": "b39d",
-      "name": "egega",
-      "description": "aerhaeh",
-      "category": "interactive"
-    },
-    {
-      "id": "995f",
-      "name": "eargqeg",
-      "description": "ehrwh",
-      "category": "movement"
-    },
-    {
-      "id": "3de8",
-      "name": "duplo, duplo, duplo",
-      "description": "sjvnWEGVNIF",
-      "category": "structural"
     }
   ]
 }

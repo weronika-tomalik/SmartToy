@@ -7,6 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
+
     module: {
         rules: [
             {
@@ -38,10 +39,11 @@ module.exports = {
     ],
     devServer: {
         static: {
-            directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'public'),
         },
         compress: true,
         port: 3000,
         open: true
     }
+
 };

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Container, Row, Card, CardBody, CardTitle, CardText} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import './SelectedToysPage.scss'
 import RemoveButton from "../components/RemoveButton";
 const SelectedToysPage = ({typeOfToy}) => {
     const [toys, setToys] = useState([]);
 
-    const fetchToys = () => {
+const fetchToys = () => {
         fetch('http://localhost:5000/toys')
             .then(response => response.json())
             .then(data => setToys(data))
@@ -36,20 +36,29 @@ const SelectedToysPage = ({typeOfToy}) => {
     return (
         <Container className='toy__container'>
             <Row>
-                <Col className='toy__header'>Your {typeOfToy} toys</Col>
-            </Row>
-            {selectedToys.map(toy => (
-                        <Row  key={toy.id} className='toy__item'>
-                            <Col className='toy__item-header' >{toy.name} </Col>
-                            <Col className='toy__item-info' >{toy.description}</Col>
-                            <Col><Button lg={2} onClick={() => handleNavigate(`/updatetoy/${toy.id}`)} variant="outline-light" className='m-2'>Update toy info</Button></Col>
-                            <Col><RemoveButton id={toy.id} onToyRemoved={handleToyRemoved}/></Col>
-                        </Row>
-                ))}
-            <Row className='toy__row-button'>
-                <Col className='text-center'>
-                    <Button onClick={() => handleNavigate('/newtoy')} variant="outline-light" className='toy__button'>Dodaj nową zabawkę</Button>
+                <Col>
+                    <h2 className='text-center' style={{fontSize: 'calc(1.5rem + 1vw)', letterSpacing: '5px', marginBottom: '40px'}}>Your {typeOfToy} toys</h2>
                 </Col>
+            </Row>
+            <Row className='justify-content-center'>
+            {selectedToys.map((toy, index) => (
+                <Card className='shadow-lg' style={{ width: '50rem', border: '1px solid lightgray', marginBottom: '15px', paddingLeft: '30px' }}>
+                    <Col >
+                    <CardBody key={toy.id}>
+                        <CardTitle style={{textTransform: 'lowercase'}}>{index + 1}. {toy.name}</CardTitle>
+                        <CardText style={{textIndent: '25px'}}>
+                            {toy.description}
+                        </CardText>
+                    </CardBody>
+                    </Col>
+                    <Col >
+                    <CardBody className='text-end'>
+                        <Button lg={2} onClick={() => handleNavigate(`/updatetoy/${toy.id}`)} variant="outline-dark" style={{marginRight: '15px', fontSize: '1rem'}}>Update toy info</Button>
+                        <RemoveButton id={toy.id} onToyRemoved={handleToyRemoved}/>
+                    </CardBody>
+                    </Col>
+                </Card>))}
+
             </Row>
         </Container>
     );

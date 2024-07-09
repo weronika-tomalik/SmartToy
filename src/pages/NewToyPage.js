@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
-import {FormGroup, FormLabel, FormControl, Form, FormSelect, Container, ToastContainer, Toast, ToastBody,CloseButton} from "react-bootstrap";
+import React, { useState} from 'react';
+import {FormGroup, FormLabel, FormControl, Form, FormSelect, Container, ToastContainer, Toast, ToastBody, Card, CardBody, CardTitle, CardText} from "react-bootstrap";
 import {Button, Row, Col} from "react-bootstrap";
 import "./NewToyPage.scss";
-
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -12,24 +11,31 @@ const NewToyPage = () => {
     const [category, setCategory] = useState('');
     const [errors, setErrors] = useState([]);
     const [showToast, setShowToast] = useState(false);
+    const [showToys, setShowToys] = useState(false);
+    const [toys, setToys] = useState([]);
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const newErrors = [];
 
         if (!name) {
-            newErrors.name = 'Toy name is required.';
+            newErrors.name = 'Toy name is required!';
         }
         else if (name.length < 3){
-            newErrors.name = "Toy name is too short"
+            newErrors.name = "Toy name is too short!"
         }
 
-        if (description.length < 3){
-            newErrors.description = "Toy description is required"
+        if (!description) {
+            newErrors.description = "Toy description is required!";
+        }
+        else if (description.length < 3) {
+            newErrors.description = "Toy description is too short!"
         }
 
-        if (category.length < 1) {
-            newErrors.category = "Select the toys category"
+        if (!category) {
+            newErrors.category = "Select the toys category!";
         }
 
         if (Object.keys(newErrors).length > 0) {
@@ -54,14 +60,24 @@ const NewToyPage = () => {
                 .then(data => {
                     setName('');
                     setDescription('');
-                    setCategory('');
+                    setCategory(category);
                     setShowToast(true)
+                    setShowToys(true)
+                    fetchToysByCategory(category)
                 })
                 .catch(error => console.error('Error adding task:', error));
     };
 
+    const fetchToysByCategory = (category) => {
+        fetch(`http://localhost:5000/toys?category=${category}`)
+            .then((response) => response.json())
+            .then((data) => setToys(data))
+            .catch((error) => console.error('Error fetching toys:', error));
+    };
+
     return (
         <Container className='form__container'>
+            <h2 className='text-center'>Add new toy!</h2>
         <Form onSubmit={handleSubmit}>
             <Row className='justify-content-center'>
                 <Col sx={12} sm={8} md={8} >
@@ -122,6 +138,24 @@ const NewToyPage = () => {
                     </ToastContainer>
                 </Col>
             </Row>
+            {showToys === true &&
+                    <Row>
+                        <Col>
+                        <h3 className="text-center" style={{marginTop: '20px', textTransform: 'capitalize'}}>{category} toys </h3>
+                        <Row className='justify-content-center' style={{marginTop: '25px'}}>{toys.map((toy) => (
+                            <Col lg={8} style={{marginBottom: '15px'}}>
+                                <Card>
+                                    <CardBody key={toy.id}>
+                                        <CardTitle>{toy.name}</CardTitle>
+                                        <CardText>
+                                            {toy.description}
+                                        </CardText>
+                                    </CardBody>
+                                </Card>
+                            </Col>))}
+                        </Row>
+                        </Col>
+                    </Row>}
         </Container>
     );
 };

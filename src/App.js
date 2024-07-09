@@ -7,11 +7,13 @@ import NewToyPage from "./pages/NewToyPage";
 import NewListOfToys from  "./pages/NewListOfToys";
 import SelectedToysPage from "./pages/SelectedToysPage";
 import UpdateToyInfo from "./components/UpdateToyInfo";
-
+import NavigationSmart from "./components/NavigationSmart";
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
         <HashRouter>
+            <NavigationSmart/>
             <Routes>
                 <Route path='/' element={<HomePage/>} />
                 <Route path="newlistoftoys" element={<NewListOfToys/>} />
@@ -21,6 +23,7 @@ const App = () => {
                 <Route path='toyinteractive' element={<SelectedToysPage typeOfToy='interactive'/>} />
                 <Route path='toystructural' element={<SelectedToysPage typeOfToy='structural'/>} />
             </Routes>
+            <Footer/>
         </HashRouter>
     )}
 

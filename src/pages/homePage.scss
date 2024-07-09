@@ -1,8 +1,6 @@
 .container-test {
   margin-top: 40px;
-  background-color: rgba(215,163,208,0.2);
   padding: 30px;
-  border-radius: 30px;
 }
 
 .test {
@@ -37,3 +35,41 @@
   padding: 20px;
 }
 
+.btn--footer {
+  border: 1px black double;
+  color: black;
+  //font-size: 20px;
+  //font-weight: bold;
+  background-color: transparent;
+  margin: 10px;
+  padding: 10px;
+  width: 40px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 992px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+@media (max-width: 1200px) {
+  .card-text {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 992px) {
+  .card-text {
+    font-size: 1rem;
+  }
+}
