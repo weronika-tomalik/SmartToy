@@ -107,6 +107,114 @@
       "name": "domek grający",
       "description": "dodatkowy sorter",
       "category": "interactive"
+    },
+    {
+      "id": "10af",
+      "name": "klocki - kratki",
+      "description": "dość małe, lepiej mieć na oku dziecko w czasie zabawy",
+      "category": "structural"
+    },
+    {
+      "id": "4665",
+      "name": "kaczka do pchania",
+      "description": "świetnie sprawdzi się na spacerach, czasem nóżki się zacinają",
+      "category": "movement"
+    },
+    {
+      "id": "7652",
+      "name": "saksofon z przyciskami do wygrywania różnych melodii",
+      "description": "dość głośny, baterie AA",
+      "category": "interactive"
+    },
+    {
+      "id": "e048",
+      "name": "drewniany jeździk",
+      "description": "bez możliwości skręcania, dość stabilny, dobry na początek",
+      "category": "movement"
+    },
+    {
+      "id": "ed3d",
+      "name": "scottAndRide",
+      "description": "doskonały na urlop, na początku warto blokować kółka, by nie skręcały",
+      "category": "movement"
+    },
+    {
+      "id": "8580",
+      "name": "rowerek biegowy KinderKraft",
+      "description": "opony 14, niewiele używany ",
+      "category": "movement"
+    },
+    {
+      "id": "1e87",
+      "name": "mini - katarynka do popchania",
+      "description": "bardzo głośna, rączka niestety odpada",
+      "category": "movement"
+    },
+    {
+      "id": "1a41",
+      "name": "Little Duch - miniVan do pchania",
+      "description": "świetnie sprawdzi się do przewożenia skarbów po domu",
+      "category": "movement"
+    },
+    {
+      "id": "3e1f",
+      "name": "drabinka  do zawieszenia na ścianie",
+      "description": "lekka, łatwa w montażu, wymaga materaca pod",
+      "category": "movement"
+    },
+    {
+      "id": "2100",
+      "name": "leniwiec - FisherPrice",
+      "description": "regulacja głośności, baterie AAA",
+      "category": "interactive"
+    },
+    {
+      "id": "9a1d",
+      "name": "tor wyścigowy dla samochodzików",
+      "description": "100 elementów elastycznych - możliwość zbudowania toru",
+      "category": "structural"
+    },
+    {
+      "id": "91de",
+      "name": "stolik zabaw - FisherPrice",
+      "description": "dźwięki zwierząt, młoteczek - uruchamia piosenki, bębenek ",
+      "category": "interactive"
+    },
+    {
+      "id": "9e69",
+      "name": "lego - duplo - marchewka ",
+      "description": "W zestawie 30 klocków, w tym konewka",
+      "category": "structural"
+    },
+    {
+      "id": "d779",
+      "name": "śpiewająca Panda - FisherPrice",
+      "description": "łączy się zdalnie z leniwcem",
+      "category": "interactive"
+    },
+    {
+      "id": "aa4e",
+      "name": "drewniana żmija ",
+      "description": "do ciągnięcia, kółka wymagają dodatkowych zabezpieczeń (rysują podłogę)",
+      "category": "movement"
+    },
+    {
+      "id": "df25",
+      "name": "pingwin - FisherPrice",
+      "description": "łączy się zdalnie z leniwcem i pandą",
+      "category": "interactive"
+    },
+    {
+      "id": "5014",
+      "name": "pchacz - krowa - FisherPrice",
+      "description": "zbyt lekki, raczej dla dziecka, które już stabilnie stoi",
+      "category": "movement"
+    },
+    {
+      "id": "f4f1",
+      "name": "edukacyjny wieloryb",
+      "description": "wydawanie dźwięków, piosenki, liczenie",
+      "category": "interactive"
     }
   ]
 }
