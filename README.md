@@ -1,6 +1,6 @@
 # About
 
-SmartToy is simple app, witch help parents, who need a few minutes without their child (every parents need :)).
+SmartToy is a simple app, which helps parents, who need a few minutes without their child (every parent needs :)).
 SmartToy helps organizing all the toys in the child's room,
 so that:
 - he or she is never bored  
