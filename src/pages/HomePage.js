@@ -1,13 +1,11 @@
 import React, {useContext} from 'react';
 import {Container} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
-import "./homePage.scss";
 import {ThemeContext} from '../store/ThemeContext'
 import ThemeButton from "../components/ThemeButton";
-import MainSmart from "../components/mainSmart";
-import Header from "../components/Header";
-import '../assets/styles/main.scss'
-import Search from "../components/search";
+import MainCard from "../components/MainCard";
+import MainCarousel from "../components/MainCarousel";
+import Search from "../components/Search";
 
 const HomePage = () => {
 
@@ -20,23 +18,23 @@ const HomePage = () => {
 
     return (
 
-        <Container className={`container-test ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`}>
+        <Container className={`container-grid ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`}>
             <ThemeButton/>
             <Search/>
-            <Header/>
-            <MainSmart
+            <MainCarousel/>
+            <MainCard
                 path={"/toymovement"}
                 title='A few words about movement...'
                 myImg="/assets/images/bobby-car-349695_1280.jpg"
                 infoText='Movement activities for children are essential in fostering healthy development. Gross motor activities and imaginative movements that can be done in the home or school are great for helping to develop muscles, bones and knowledge of the environment.'
                 buttonText='Your movement toys'/>
-            <MainSmart
+            <MainCard
                 path={"/toyinteractive"}
                 title='What about interactive toys?'
                 myImg="/assets/images/baby-84552_1280.jpg"
                 infoText='Interactive toys are toys that are designed to engage the child in play and learning through active participation. These toys often incorporate technology, such as sensors or buttons, that respond to the child’s actions, encouraging creativity and exploration. They can range from simple pull-string toys to more complex computer games and robotics kits. Interactive toys offer many benefits, including the development of problem-solving skills, hand-eye coordination, and cognitive abilities.'
                 buttonText='Your interactive toys'/>
-            <MainSmart
+            <MainCard
                 path={"/toystructural"}
                 title='Magic of structural toys'
                 myImg="/assets/images/child-1864718_1920.jpg"

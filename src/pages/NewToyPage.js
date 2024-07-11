@@ -1,7 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {FormGroup, FormLabel, FormControl, Form, FormSelect, Container, ToastContainer, Toast, ToastBody, Card, CardBody, CardTitle, CardText} from "react-bootstrap";
 import {Button, Row, Col} from "react-bootstrap";
-import "./NewToyPage.scss";
 import 'react-toastify/dist/ReactToastify.css'
 
 
@@ -74,7 +73,7 @@ const NewToyPage = () => {
     };
 
     return (
-        <Container className='form__container'>
+        <Container className='container-grid--form'>
             <h2 className='text-center'>Add new toy!</h2>
             <Form onSubmit={handleSubmit}>
                 <Row className='justify-content-center'>
@@ -130,7 +129,7 @@ const NewToyPage = () => {
                 </Row>
                 <Row>
                     <Col className='text-center'>
-                        <Button type="submit" variant="outline-light" className='form__button justify-content-center'>Add Toy</Button>
+                        <Button type="submit" variant="outline-dark" className='form__button justify-content-center'>Add Toy</Button>
                     </Col>
                 </Row>
             </Form>

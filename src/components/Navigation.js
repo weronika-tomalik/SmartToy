@@ -2,9 +2,9 @@ import React, {useContext} from 'react';
 import {Container, Navbar, NavLink, Nav, NavbarBrand, NavDropdown } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import {ThemeContext} from "../store/ThemeContext";
-import '../assets/styles/main.scss'
+import '../assets/scss/main.scss'
 
-const NavigationSmart = () => {
+const Navigation = () => {
 
     const { isDarkTheme } = useContext(ThemeContext)
 
@@ -33,4 +33,4 @@ const NavigationSmart = () => {
     );
 };
 
-export default NavigationSmart;
+export default Navigation;

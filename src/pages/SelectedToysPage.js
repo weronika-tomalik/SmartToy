@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {Button, Col, Container, Row, Card, CardBody, CardTitle, CardText} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
-import './SelectedToysPage.scss'
 import RemoveButton from "../components/RemoveButton";
+
+
 const SelectedToysPage = ({typeOfToy}) => {
     const [toys, setToys] = useState([]);
 
@@ -34,7 +35,7 @@ const fetchToys = () => {
     }
 
     return (
-        <Container className='toy__container'>
+        <Container className='container-grid'>
             <Row>
                 <Col>
                     <h2 className='text-center' style={{fontSize: 'calc(1.5rem + 1vw)', letterSpacing: '5px', marginBottom: '40px'}}>Your {typeOfToy} toys</h2>

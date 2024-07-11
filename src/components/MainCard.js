@@ -3,7 +3,7 @@ import {Button, Col, Row, Card, CardImg, CardBody, CardImgOverlay, CardTitle, Ca
 import {useNavigate} from "react-router-dom";
 
 
-const MainSmart = ({path, title, myImg, infoText, buttonText}) => {
+const MainCard = ({path, title, myImg, infoText, buttonText}) => {
     const navigate = useNavigate();
     const handleNavigate = (path) => {
         navigate(path);
@@ -31,4 +31,4 @@ const MainSmart = ({path, title, myImg, infoText, buttonText}) => {
     );
 };
 
-export default MainSmart;
+export default MainCard;

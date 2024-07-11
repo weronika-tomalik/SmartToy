@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button} from "react-bootstrap";
-import '../pages/SelectedToysPage.scss'
+
 
 const RemoveButton = ({ id, onToyRemoved }) => {
 

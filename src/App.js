@@ -7,13 +7,13 @@ import NewToyPage from "./pages/NewToyPage";
 import NewListOfToys from  "./pages/NewListOfToys";
 import SelectedToysPage from "./pages/SelectedToysPage";
 import UpdateToyInfo from "./components/UpdateToyInfo";
-import NavigationSmart from "./components/NavigationSmart";
+import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 const App = () => {
     return (
         <HashRouter>
-            <NavigationSmart/>
+            <Navigation/>
             <Routes>
                 <Route path='/' element={<HomePage/>} />
                 <Route path="newlistoftoys" element={<NewListOfToys/>} />

@@ -11,7 +11,7 @@ const Search = () => {
 
             const filteredResults = data.filter(toy =>
                 toy.name.toLowerCase().includes(query.toLowerCase()) ||
-                toy.description.toLowerCase().includes(query.toLowerCase()) 
+                toy.description.toLowerCase().includes(query.toLowerCase())
             );
             setResults(filteredResults);
 

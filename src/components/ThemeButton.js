@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Button} from "react-bootstrap";
 import {ThemeContext} from "../store/ThemeContext";
-import "../assets/styles/main.scss";
+import "../assets/scss/main.scss";
 
 
 const ThemeButton = () => {

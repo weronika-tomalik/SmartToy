@@ -1,3 +1,8 @@
+@import 'mixins';
+@import 'variables';
+@import 'styles';
+@import 'media';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,13 +18,13 @@ body {
 }
 
 .darkTheme {
-  background-color: black;
-  color: aliceblue;
+  //background-color: black;
+  //color: aliceblue;
 }
 
 .lightTheme {
-  background-color: aliceblue;
-  color: black;
+  //background-color: aliceblue;
+  //color: black;
 }
 
 button {

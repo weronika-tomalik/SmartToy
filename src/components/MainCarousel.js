@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { Carousel, CarouselItem, CarouselCaption, Image} from "react-bootstrap";
 
 
-const Header = () => {
+const MainCarousel = () => {
     return (
 
         <>
@@ -33,4 +33,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default MainCarousel;
