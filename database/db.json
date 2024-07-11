@@ -8,7 +8,7 @@
     },
     {
       "id": "bd05",
-      "name": "śpiewający kociołek ",
+      "name": "śpiewający kociołek + klocki",
       "description": "dodatkowo 5 elementów do sortowania, po angielsku, FisherPrice, 130 zł",
       "category": "interactive"
     },
@@ -215,6 +215,12 @@
       "name": "edukacyjny wieloryb",
       "description": "wydawanie dźwięków, piosenki, liczenie",
       "category": "interactive"
+    },
+    {
+      "id": "db49",
+      "name": "duplo - las",
+      "description": "50 elementów",
+      "category": "structural"
     }
   ]
 }

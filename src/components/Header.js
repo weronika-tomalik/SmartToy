@@ -1,8 +1,10 @@
-import React from 'react';
-import {Row, Col, Carousel, CarouselItem, CarouselCaption, Image} from "react-bootstrap";
+import React, {useContext} from 'react';
+import { Carousel, CarouselItem, CarouselCaption, Image} from "react-bootstrap";
+
 
 const Header = () => {
     return (
+
         <>
             <Carousel className='shadow-lg rounded-2' style={{marginBottom: '30px'}}>
                 <CarouselItem >

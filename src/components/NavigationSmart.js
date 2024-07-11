@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Container, Navbar, NavLink, Nav, NavbarBrand, NavDropdown } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
+import {ThemeContext} from "../store/ThemeContext";
+import '../assets/styles/main.scss'
 
 const NavigationSmart = () => {
+
+    const { isDarkTheme } = useContext(ThemeContext)
+
     const navigate = useNavigate();
     const handleNavigate = (path) => {
         navigate(path);
     }
     return (
         <>
-            <Navbar className='shadow-sm' style={{minWidth: '100vw', background: 'rgba(215,163,208,0.5)'}}>
+            <Navbar className={`shadow-sm ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`} style={{minWidth: '100vw', background: 'rgba(215,163,208,0.5)'}}>
                 <Container>
                     <NavbarBrand style={{fontWeight: '500', fontSize: '25px'}}>SmartToys</NavbarBrand>
                     <Nav className="me-auto">

@@ -4,13 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/styles/main.scss";
 import App from "./App"
 import '@fortawesome/fontawesome-free/css/all.min.css';
-// import {RandomToysProvider} from './store/RandomToysContext'
+import {ThemeProvider} from './store/ThemeContext'
 
 
 const Index = () => (
-    // <RandomToysProvider>
+    <ThemeProvider>
         <App/>
-    // </RandomToysProvider>
+    </ThemeProvider>
     )
 
 const container = document.getElementById("index");

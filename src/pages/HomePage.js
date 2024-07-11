@@ -2,17 +2,17 @@ import React, {useContext} from 'react';
 import {Container} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import "./homePage.scss";
-// import {RandomToyContext} from '../store/RandomToysContext'
-// import RandomToyButton from "../components/RandomToysButton";
+import {ThemeContext} from '../store/ThemeContext'
+import ThemeButton from "../components/ThemeButton";
 import MainSmart from "../components/mainSmart";
 import Header from "../components/Header";
-
-
-
+import '../assets/styles/main.scss'
+import Search from "../components/search";
 
 const HomePage = () => {
 
-    // nie wiem, co tutaj = useContext(RandomToyContext)
+    const { isDarkTheme } = useContext(ThemeContext)
+
     const navigate = useNavigate();
     const handleNavigate = (path) => {
         navigate(path);
@@ -20,7 +20,9 @@ const HomePage = () => {
 
     return (
 
-        <Container className='container-test '>
+        <Container className={`container-test ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`}>
+            <ThemeButton/>
+            <Search/>
             <Header/>
             <MainSmart
                 path={"/toymovement"}
