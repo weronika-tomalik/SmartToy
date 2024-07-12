@@ -5,7 +5,7 @@ import { Carousel, CarouselItem, CarouselCaption, Image} from "react-bootstrap";
 const MainCarousel = () => {
     return (
 
-        <>
+
             <Carousel className='shadow-lg rounded-2 carousel'>
                 <CarouselItem >
                     <Image src="/assets/images/white-children-room-with-copy-space.jpg" text="First slide" className="d-block w-100 carousel__img" />
@@ -29,7 +29,7 @@ const MainCarousel = () => {
                     </CarouselCaption>
                 </CarouselItem>
             </Carousel>
-        </>
+
     );
 };
 
