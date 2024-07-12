@@ -2,7 +2,6 @@ import React, {useContext} from 'react';
 import {Container} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import {ThemeContext} from '../store/ThemeContext'
-import ThemeButton from "../components/ThemeButton";
 import MainCard from "../components/MainCard";
 import MainCarousel from "../components/MainCarousel";
 import Search from "../components/Search";
@@ -19,7 +18,6 @@ const HomePage = () => {
     return (
 
         <Container className={`container-grid ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`}>
-            <ThemeButton/>
             <Search/>
             <MainCarousel/>
             <MainCard

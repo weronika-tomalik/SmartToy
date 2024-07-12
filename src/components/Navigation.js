@@ -4,9 +4,10 @@ import {useNavigate} from "react-router-dom";
 import {ThemeContext} from "../store/ThemeContext";
 import '../assets/scss/main.scss'
 
+
 const Navigation = () => {
 
-    const { isDarkTheme } = useContext(ThemeContext)
+    const { isDarkTheme, toggleTheme } = useContext(ThemeContext)
 
     const navigate = useNavigate();
     const handleNavigate = (path) => {
@@ -22,10 +23,11 @@ const Navigation = () => {
                         <NavLink to="/" className="nav-link" onClick={() => handleNavigate('newtoy')}>Add toy</NavLink>
                         <NavLink to="/" className="nav-link" onClick={() => handleNavigate('/newlistoftoys')}>New toy set</NavLink>
                         <NavDropdown title="Your toys" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item to="/" className="nav-link" onClick={() => handleNavigate('/toystructural')}>Structural toys</NavDropdown.Item>
-                            <NavDropdown.Item to="/" className="nav-link" onClick={() => handleNavigate('/toyinteractive')}>Interactive toys</NavDropdown.Item>
-                            <NavDropdown.Item to="/" className="nav-link" onClick={() => handleNavigate('/toymovement')}>Movement toys</NavDropdown.Item>
+                            <NavDropdown.Item to="/" className="nav-link" style={{backgroundColor: 'white' }} onClick={() => handleNavigate('/toystructural')}>Structural toys</NavDropdown.Item>
+                            <NavDropdown.Item to="/" className="nav-link" style={{backgroundColor: 'white' }} onClick={() => handleNavigate('/toyinteractive')}>Interactive toys</NavDropdown.Item>
+                            <NavDropdown.Item to="/" className="nav-link" style={{backgroundColor: 'white' }} onClick={() => handleNavigate('/toymovement')}>Movement toys</NavDropdown.Item>
                         </NavDropdown>
+                        <NavLink onClick={toggleTheme} className={`${isDarkTheme ? 'lightBtn' : 'darkBtn'}`}>Change Theme</NavLink>
                     </Nav>
                 </Container>
             </Navbar>
