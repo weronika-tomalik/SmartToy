@@ -2,10 +2,10 @@ import React from "react";
 import {Routes} from "react-router-dom";
 import {Route} from "react-router-dom";
 import {HashRouter} from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import NewToyPage from "./pages/NewToyPage";
-import NewListOfToys from  "./pages/NewListOfToys";
-import SelectedToysPage from "./pages/SelectedToysPage";
+import Home from "./pages/Home";
+import NewToy from "./pages/NewToy";
+import NewToyList from "./pages/NewToyList";
+import CategoryToys from "./pages/CategoryToys";
 import UpdateToyInfo from "./components/UpdateToyInfo";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -15,13 +15,13 @@ const App = () => {
         <HashRouter>
             <Navigation/>
             <Routes>
-                <Route path='/' element={<HomePage/>} />
-                <Route path="newlistoftoys" element={<NewListOfToys/>} />
-                <Route path='newtoy' element={<NewToyPage/>} />
+                <Route path='/' element={<Home/>} />
+                <Route path="newlistoftoys" element={<NewToyList/>} />
+                <Route path='newtoy' element={<NewToy/>} />
                 <Route path='updatetoy/:id' element={<UpdateToyInfo/>} />
-                <Route path='toymovement' element={<SelectedToysPage typeOfToy='movement'/>}  />
-                <Route path='toyinteractive' element={<SelectedToysPage typeOfToy='interactive'/>} />
-                <Route path='toystructural' element={<SelectedToysPage typeOfToy='structural'/>} />
+                <Route path='toymovement' element={<CategoryToys typeOfToy='movement'/>}  />
+                <Route path='toyinteractive' element={<CategoryToys typeOfToy='interactive'/>} />
+                <Route path='toystructural' element={<CategoryToys typeOfToy='structural'/>} />
             </Routes>
             <Footer/>
         </HashRouter>

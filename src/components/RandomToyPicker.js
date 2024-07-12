@@ -39,7 +39,7 @@ const RandomToyPicker = ({interactive, movement, structural}) => {
 
 
     return (
-        <Container style={{marginTop: '40px', backgroundColor: 'rgba(215,163,208,0.2)', padding: '30px', borderRadius: '30px'}}>
+        <Container className='container-grid--form'>
             <Row>
                 <Col className='text-center' style={{marginBottom: '20px'}}>
                     <h2>Here you are! Your new toy set.</h2>
@@ -49,9 +49,9 @@ const RandomToyPicker = ({interactive, movement, structural}) => {
             <Row className='justify-content-center' >
                 {randomElements.map((element, index) => (
                     <Col sm={12} lg={7}>
-                    <Card key={index} className='shadow-lg' style={{ border: '1px solid lightgray', marginBottom: '15px' }}>
+                    <Card key={index} className='shadow-lg card--selected'>
                             <CardBody>
-                                <CardTitle style={{textTransform: 'lowercase'}}>{index + 1}. {element.name}</CardTitle>
+                                <CardTitle className='card__title--selected'>{index + 1}. {element.name}</CardTitle>
                                 <CardText>{element.category} / {element.description}</CardText>
                             </CardBody>
                     </Card>

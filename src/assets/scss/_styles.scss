@@ -1,14 +1,37 @@
 
 .navigation {
-
+  min-width: 100vw;
+  background: rgba(215,163,208,0.5);
 }
 
-.search {
+.navigation__brand {
+  font-weight: 500;
+  font-size: 25px;
+}
 
+.navigation__dropdown {
+  background-color: white;
+}
+
+.navigation__dropdown:hover {
+  background-color: lightgrey;
 }
 
 .carousel {
+  margin-bottom: 30px;
+}
 
+.carousel__img {
+  max-height: 400px
+}
+
+.carousel__caption {
+  color: #13060C;
+  font-weight: 500;
+}
+
+.carousel__caption-header {
+  font-size: 40px;
 }
 
 .container-grid {
@@ -39,13 +62,66 @@
   padding: 10px 30px 10px 30px;
 }
 
-.mainCard {
+.card {
+  margin-bottom: 30px;
+}
 
+.card--selected {
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+}
+
+.card--category {
+  width: 50rem;
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.card__body {
+  font-size: calc(0.5rem + 1vw);
+}
+
+.card__title {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.card__title--selected {
+  text-transform: lowercase;
+}
+
+.card__text--selected {
+  text-indent: 25px;
+}
+
+.card__text {
+  margin-bottom: 30px;
+}
+
+.card__button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.category__header {
+  font-size: calc(1.5rem + 1vw);
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+
+.category__button {
+  margin-right: 15px;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 9rem;
 }
 
 .footer{
-
+  background-color: transparent;
+  min-width: 100vw;
 }
+
 .footer__button {
   border: 1px black double;
   color: black;
@@ -55,9 +131,6 @@
   width: 40px;
 }
 
-.button {
-
-}
 
 
 

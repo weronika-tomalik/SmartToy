@@ -14,24 +14,24 @@ const Navigation = () => {
         navigate(path);
     }
     return (
-        <>
-            <Navbar className={`shadow-sm ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`} style={{minWidth: '100vw', background: 'rgba(215,163,208,0.5)'}}>
+
+            <Navbar className={`navigation shadow-sm ${isDarkTheme ? 'darkTheme' : 'lightTheme'}`}>
                 <Container>
-                    <NavbarBrand style={{fontWeight: '500', fontSize: '25px'}}>SmartToys</NavbarBrand>
+                    <NavbarBrand className='navigation__brand'>SmartToys</NavbarBrand>
                     <Nav className="me-auto">
                         <NavLink to="/" className="nav-link" onClick={() => handleNavigate('/')}>Home</NavLink>
                         <NavLink to="/" className="nav-link" onClick={() => handleNavigate('newtoy')}>Add toy</NavLink>
                         <NavLink to="/" className="nav-link" onClick={() => handleNavigate('/newlistoftoys')}>New toy set</NavLink>
                         <NavDropdown title="Your toys" id="collapsible-nav-dropdown">
-                            <NavDropdown.Item to="/" className="nav-link" style={{backgroundColor: 'white' }} onClick={() => handleNavigate('/toystructural')}>Structural toys</NavDropdown.Item>
-                            <NavDropdown.Item to="/" className="nav-link" style={{backgroundColor: 'white' }} onClick={() => handleNavigate('/toyinteractive')}>Interactive toys</NavDropdown.Item>
-                            <NavDropdown.Item to="/" className="nav-link" style={{backgroundColor: 'white' }} onClick={() => handleNavigate('/toymovement')}>Movement toys</NavDropdown.Item>
+                            <NavDropdown.Item to="/" className="nav-link navigation__dropdown" onClick={() => handleNavigate('/toystructural')}>Structural toys</NavDropdown.Item>
+                            <NavDropdown.Item to="/" className="nav-link navigation__dropdown" onClick={() => handleNavigate('/toyinteractive')}>Interactive toys</NavDropdown.Item>
+                            <NavDropdown.Item to="/" className="nav-link navigation__dropdown" onClick={() => handleNavigate('/toymovement')}>Movement toys</NavDropdown.Item>
                         </NavDropdown>
                         <NavLink onClick={toggleTheme} className={`${isDarkTheme ? 'lightBtn' : 'darkBtn'}`}>Change Theme</NavLink>
                     </Nav>
                 </Container>
             </Navbar>
-        </>
+
     );
 };
 

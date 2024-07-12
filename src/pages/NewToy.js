@@ -4,7 +4,7 @@ import {Button, Row, Col} from "react-bootstrap";
 import 'react-toastify/dist/ReactToastify.css'
 
 
-const NewToyPage = () => {
+const NewToy = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
@@ -145,11 +145,10 @@ const NewToyPage = () => {
             {showToys && (
                 <Row>
                     <Col>
-                        <h3 className="text-center" style={{ marginTop: '20px', textTransform: 'capitalize' }}>{category} toys</h3>
+                        <h3 className="text-center" style={{ marginTop: '30px'}}>{toys.category} toys</h3>
                         <Row className='justify-content-center' style={{ marginTop: '25px' }}>
                             {toys.map((toy, index) => (
-                                <Col ref={(el) => (refs.current[index] = el)}
-                                     key={toy.id} lg={8} style={{ marginBottom: '15px' }}>
+                                <Col ref={(el) => (refs.current[index] = el)} key={toy.id} lg={8}>
                                     <Card>
                                         <CardBody>
                                             <CardTitle>{toy.name}</CardTitle>
@@ -166,4 +165,4 @@ const NewToyPage = () => {
     );
 };
 
-export default NewToyPage
+export default NewToy

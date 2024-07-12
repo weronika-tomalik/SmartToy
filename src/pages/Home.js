@@ -6,7 +6,7 @@ import MainCard from "../components/MainCard";
 import MainCarousel from "../components/MainCarousel";
 import Search from "../components/Search";
 
-const HomePage = () => {
+const Home = () => {
 
     const { isDarkTheme } = useContext(ThemeContext)
 
@@ -43,4 +43,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Home;

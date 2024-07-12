@@ -221,6 +221,36 @@
       "name": "duplo - las",
       "description": "50 elementów",
       "category": "structural"
+    },
+    {
+      "id": "6e19",
+      "name": "smok",
+      "description": "świetne nagrania, wartościowe komunikaty, możliwość regulacji głośności ",
+      "category": "interactive"
+    },
+    {
+      "id": "3b4b",
+      "name": "skoczek - krowa",
+      "description": "na początku bardzo trudno zachować na niej równowagę ",
+      "category": "movement"
+    },
+    {
+      "id": "2bea",
+      "name": "tor wyścigowy ",
+      "description": "samochodzik nie działa poprawnie, trudno łączyć elementy",
+      "category": "structural"
+    },
+    {
+      "id": "da3e",
+      "name": "śpiewająca żyrafa",
+      "description": "trudno wcisnąć przycisk, by uruchomić zabawkę",
+      "category": "interactive"
+    },
+    {
+      "id": "4760",
+      "name": "mini-trampolina",
+      "description": "brak zabezpieczeń, rysuje podłogę",
+      "category": "movement"
     }
   ]
 }

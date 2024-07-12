@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 import RemoveButton from "../components/RemoveButton";
 
 
-const SelectedToysPage = ({typeOfToy}) => {
+const CategoryToys = ({typeOfToy}) => {
     const [toys, setToys] = useState([]);
 
 const fetchToys = () => {
@@ -35,26 +35,26 @@ const fetchToys = () => {
     }
 
     return (
-        <Container className='container-grid'>
+        <Container className='container-grid--form'>
             <Row>
                 <Col>
-                    <h2 className='text-center' style={{fontSize: 'calc(1.5rem + 1vw)', letterSpacing: '5px', marginBottom: '40px'}}>Your {typeOfToy} toys</h2>
+                    <h2 className='text-center category__header'>Your {typeOfToy} toys</h2>
                 </Col>
             </Row>
             <Row className='justify-content-center'>
             {selectedToys.map((toy, index) => (
-                <Card className='shadow-lg' style={{ width: '50rem', border: '1px solid lightgray', marginBottom: '15px', paddingLeft: '30px' }}>
+                <Card className='shadow-lg card--category'>
                     <Col >
                     <CardBody key={toy.id}>
-                        <CardTitle style={{textTransform: 'lowercase'}}>{index + 1}. {toy.name}</CardTitle>
-                        <CardText style={{textIndent: '25px'}}>
+                        <CardTitle className='card__title--selected'>{index + 1}. {toy.name}</CardTitle>
+                        <CardText className='card__text--selected'>
                             {toy.description}
                         </CardText>
                     </CardBody>
                     </Col>
                     <Col >
                     <CardBody className='text-end'>
-                        <Button lg={2} onClick={() => handleNavigate(`/updatetoy/${toy.id}`)} variant="outline-dark" style={{marginRight: '15px', fontSize: '1rem'}}>Update toy info</Button>
+                        <Button lg={2} onClick={() => handleNavigate(`/updatetoy/${toy.id}`)} variant="outline-dark" className='category__button'>Update toy info</Button>
                         <RemoveButton id={toy.id} onToyRemoved={handleToyRemoved}/>
                     </CardBody>
                     </Col>
@@ -64,4 +64,4 @@ const fetchToys = () => {
         </Container>
     );
 };
-export default SelectedToysPage
+export default CategoryToys

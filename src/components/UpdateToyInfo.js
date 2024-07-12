@@ -89,7 +89,7 @@ useEffect(() => {
     };
 
     return (
-        <Container className='form__container'>
+        <Container className='container-grid--form'>
             <Form onSubmit={handleSubmit}>
                 <Row className='justify-content-center'>
                     <Col sx={12} sm={8} md={8} >
@@ -139,7 +139,7 @@ useEffect(() => {
                 </Row>
                 <Row>
                     <Col className='text-center' >
-                        <Button type="submit" variant="outline-light" className='form__button justify-content-center'>Update</Button>
+                        <Button type="submit" variant="outline-dark" className='form__button justify-content-center'>Update</Button>
                     </Col>
                 </Row>
             </Form>

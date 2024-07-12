@@ -4,7 +4,7 @@ import {Col, Button, Row} from "react-bootstrap";
 const Footer = () => {
     return (
         <>
-                    <Row className="container d-flex py-3" style={{backgroundColor: 'transparent', minWidth: '100vw'}}>
+                    <Row className="container d-flex py-3 footer">
                         <Col sm={12} className='text-center' >
                             <Button variant="outline-light" className='footer__button'>
                             <i className="fab fa-facebook-f"></i>

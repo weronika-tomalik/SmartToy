@@ -96,8 +96,8 @@ const Search = () => {
                     }}>
                         <Col>
                             <CardBody key={index}>
-                                <CardTitle style={{textTransform: 'lowercase'}}>{index + 1}. {result.name}</CardTitle>
-                                <CardText style={{textIndent: '25px'}}>
+                                <CardTitle className='card__title--selected'>{index + 1}. {result.name}</CardTitle>
+                                <CardText className='card__text--selected'>
                                     {result.description} / {result.category}
                                 </CardText>
                             </CardBody>
