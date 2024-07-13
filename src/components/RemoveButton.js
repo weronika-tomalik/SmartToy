@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button} from "react-bootstrap";
 
-
 const RemoveButton = ({ id, onToyRemoved }) => {
 
+    // kiedy usunę zabawkę, onToyRemoved dokona aktualizacji i zabawka zniknie z listy
     const handleDelete = () => {
         if (window.confirm('Are you sure that you want to remove this toy?')) {
 
@@ -14,7 +14,6 @@ const RemoveButton = ({ id, onToyRemoved }) => {
                         if (!response.ok) {
                             throw new Error('HTTP error!');
                         }
-                        console.log('Toy deleted successfully');
                         onToyRemoved();
                     })
                     .catch(error => {

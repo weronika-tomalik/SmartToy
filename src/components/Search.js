@@ -67,10 +67,10 @@ const Search = () => {
 
 
     return (
-        <div ref={searchContainerRef}>
+        <div >
             <Row className='justify-content-center' >
                 <Col sx={9} sm={9} md={6}>
-                    <FormGroup className="input-group rounded" style={{marginBottom: '20px'}}>
+                    <FormGroup ref={searchContainerRef} className="input-group rounded" style={{marginBottom: '20px'}}>
                     <FormControl
                         type="search"
                         placeholder="Search toy"
@@ -88,14 +88,14 @@ const Search = () => {
             </Row>
             <Row className='justify-content-center' style={{marginTop: '20px'}}>
                 {results.map((result, index) => (
-                    <Card className='shadow-lg' style={{
+                    <Card key={index} className='shadow-lg' style={{
                         width: '50rem',
                         border: '1px solid lightgray',
                         marginBottom: '15px',
                         paddingLeft: '30px'
                     }}>
                         <Col>
-                            <CardBody key={index}>
+                            <CardBody >
                                 <CardTitle className='card__title--selected'>{index + 1}. {result.name}</CardTitle>
                                 <CardText className='card__text--selected'>
                                     {result.description} / {result.category}

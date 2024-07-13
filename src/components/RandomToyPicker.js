@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {Button, Card, CardBody, CardText, CardTitle, Col, Container, Row } from "react-bootstrap";
-import RemoveButton from "./RemoveButton";
+import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from "react-bootstrap";
 function randomElement(array, numElements) {
 
     if (numElements > array.length) {
         throw new RangeError("Za mało dostępnych elementów");
     }
+    // RangeError typ błędu mówiący o tym, że podana wartość nie mieści się w możliwym zakresie
     const arrayRandomToys = [...array].sort(() => 0.5 - Math.random());
 
     return arrayRandomToys.slice(0, numElements);
@@ -16,7 +16,7 @@ const RandomToyPicker = ({interactive, movement, structural}) => {
 
 
     const handleRandomSelection = () => {
-        const numElementsToSelect = 2;
+        const numElementsToSelect = 3;
 
         const selectedFromArray1 = randomElement(interactive, numElementsToSelect);
         const selectedFromArray2 = randomElement(movement, numElementsToSelect);
@@ -29,14 +29,11 @@ const RandomToyPicker = ({interactive, movement, structural}) => {
 
 
     useEffect(() => {
-            if(interactive.length>0 && movement.length>0 && structural.length>0) {
+            if (interactive.length > 0 && movement.length > 0 && structural.length > 0) {
                 handleRandomSelection();
             }
         }
         , [interactive, structural, movement]);
-
-
-
 
     return (
         <Container className='container-grid--form'>
@@ -48,8 +45,8 @@ const RandomToyPicker = ({interactive, movement, structural}) => {
             </Row>
             <Row className='justify-content-center' >
                 {randomElements.map((element, index) => (
-                    <Col sm={12} lg={7}>
-                    <Card key={index} className='shadow-lg card--selected'>
+                    <Col key={index} sm={12} lg={7}>
+                    <Card className='shadow-lg card--selected'>
                             <CardBody>
                                 <CardTitle className='card__title--selected'>{index + 1}. {element.name}</CardTitle>
                                 <CardText>{element.category} / {element.description}</CardText>

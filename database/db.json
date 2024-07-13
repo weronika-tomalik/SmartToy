@@ -251,6 +251,12 @@
       "name": "mini-trampolina",
       "description": "brak zabezpieczeń, rysuje podłogę",
       "category": "movement"
+    },
+    {
+      "id": "8d74",
+      "name": "duplo - zestaw mieszany",
+      "description": "odkupiony przez olx",
+      "category": "structural"
     }
   ]
 }

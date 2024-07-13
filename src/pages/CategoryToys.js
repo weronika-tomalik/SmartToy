@@ -43,9 +43,9 @@ const fetchToys = () => {
             </Row>
             <Row className='justify-content-center'>
             {selectedToys.map((toy, index) => (
-                <Card className='shadow-lg card--category'>
-                    <Col >
-                    <CardBody key={toy.id}>
+                <Card key={toy.id} className='shadow-lg card--category'>
+                    <Col>
+                    <CardBody>
                         <CardTitle className='card__title--selected'>{index + 1}. {toy.name}</CardTitle>
                         <CardText className='card__text--selected'>
                             {toy.description}

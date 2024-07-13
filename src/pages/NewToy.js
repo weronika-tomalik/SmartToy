@@ -116,8 +116,7 @@ const NewToy = () => {
                                 className={`form__control ${errors.category ? 'is-invalid' : ''}`}
                                 aria-label="Default select example"
                                 value={category}
-                                onChange={(e) => setCategory(e.target.value)}
-                            >
+                                onChange={(e) => setCategory(e.target.value)}>
                                 <option value="" disabled>Select category of toy</option>
                                 <option value="structural">Structural</option>
                                 <option value="movement">Movement</option>

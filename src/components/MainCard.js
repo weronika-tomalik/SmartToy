@@ -14,6 +14,7 @@ const MainCard = ({path, title, myImg, infoText, buttonText}) => {
                 <Row>
                     {myImg && (
                         <Col className='d-none d-lg-block'>
+                            {/* d-lg-block element będzie widoczny jako blok tylko na szerokich ekranach*/}
                             <CardImg src={myImg} className='h-100' />
                         </Col>)}
                         <Col>

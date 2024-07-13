@@ -27,7 +27,7 @@ const Navigation = () => {
                             <NavDropdown.Item to="/" className="nav-link navigation__dropdown" onClick={() => handleNavigate('/toyinteractive')}>Interactive toys</NavDropdown.Item>
                             <NavDropdown.Item to="/" className="nav-link navigation__dropdown" onClick={() => handleNavigate('/toymovement')}>Movement toys</NavDropdown.Item>
                         </NavDropdown>
-                        <NavLink onClick={toggleTheme} className={`${isDarkTheme ? 'lightBtn' : 'darkBtn'}`}>Change Theme</NavLink>
+                        <NavLink onClick={toggleTheme}>Change Theme</NavLink>
                     </Nav>
                 </Container>
             </Navbar>
